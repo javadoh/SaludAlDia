@@ -26,11 +26,11 @@ class MapHome extends PureComponent {
   };
 
   render() {
-    const location = this.props.navigation.getParam("location");
-    const hasLocationPermissions = this.props.navigation.getParam(
-      "hasLocationPermissions"
+    const location = this.props.route.params.location;
+    const hasLocationPermissions = this.props.route.params.
+      hasLocationPermissions
     );
-    const locationResult = this.props.navigation.getParam("locationResult");
+    const locationResult = this.props.route.params.locationResult;
 
     return (
       <View style={styles.container}>

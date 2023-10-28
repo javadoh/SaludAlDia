@@ -102,7 +102,7 @@ class SessionProfile extends Component {
 
   async componentWillMount() {
      try {
-            let userId = this.props.navigation.getParam('userId');
+            let userId = this.props.route.params.userId;
             userId = userId.substring(userId.lastIndexOf('?')+1, userId.length);
 
             console.log('BUSCANDO PERFIL DEL USUARIO '+userId);

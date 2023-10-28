@@ -37,7 +37,7 @@ class WebViewFullSize extends Component {
 
   render() {
     //let jsCode = `alert('Desde RN');`;
-    const urlWeb = this.props.navigation.getParam("urlWeb");
+    const urlWeb = this.props.route.params.urlWeb;
 
     return (
       <View

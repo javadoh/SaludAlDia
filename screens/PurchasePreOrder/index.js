@@ -102,8 +102,8 @@ class PurchasePreOrder extends Component {
       addressInput: null,
       isShowBtnAddAddress: false,
       isShowModalAddress: false,
-      userId: this.props.navigation.getParam("userId"),
-      userIdAnonymous: this.props.navigation.getParam("userIdAnonymous"),
+      userId: this.props.route.params.userId,
+      userIdAnonymous: this.props.route.params.userIdAnonymous,
       error404: false,
       modalMessage: { txtLabel: "", txtMessage: "", isShow: false }
     };

@@ -27,7 +27,7 @@ class WebViewCheckOut extends Component {
   }
 
   render() {
-    const urlAddress = this.props.navigation.getParam("urlWeb");
+    const urlAddress = this.props.route.params.urlWeb;
 
     return (
       <View

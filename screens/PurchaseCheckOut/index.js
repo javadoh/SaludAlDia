@@ -21,9 +21,9 @@ class PurchaseCheckOut extends Component {
       card: "",
       isModalVisible: false,
       visibleModal: null, 
-      userId: this.props.navigation.getParam('userId'), 
-      address: this.props.navigation.getParam('purchaseAddress'), 
-      data: this.props.navigation.getParam('data'), 
+      userId: this.props.route.params.userId, 
+      address: this.props.route.params.purchaseAddress, 
+      data: this.props.route.params.data, 
 
     };
   }
